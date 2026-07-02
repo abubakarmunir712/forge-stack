@@ -1,0 +1,13 @@
+{
+  "name": "forgestack@server",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev:client": "pnpm --filter @forgestack/client dev",
+    "dev:server": "pnpm --filter @forgestack/server start:dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format"
+  },
+  "devDependencies": {}
+}
