@@ -7,7 +7,11 @@
     "dev:server": "pnpm --filter @forgestack/server start:dev",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
-    "format": "pnpm -r format"
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^3.9.4",
+    "prettier-plugin-tailwindcss": "^0.8.0"
+  }
 }
