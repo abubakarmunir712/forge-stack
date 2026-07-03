@@ -6,6 +6,6 @@
 
 🚧 Under active development.
 
-## Roadmap
+## Vision
 
-See `docs/roadmap.md`.
+See `docs/vision.md`.
