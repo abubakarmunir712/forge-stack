@@ -7,6 +7,7 @@ import {
   THEME_STORAGE_KEY,
 } from '@/config/theme';
 import { router } from '@/router';
+import { Toaster } from '@/components/ui/sonner';
 
 export default function AppProviders() {
   return (
@@ -17,6 +18,7 @@ export default function AppProviders() {
       colorSchemeStorageKey={COLOR_SCHEME_STORAGE_KEY}
     >
       <RouterProvider router={router} />
+      <Toaster position="bottom-right" closeButton />
     </ThemeProvider>
   );
 }

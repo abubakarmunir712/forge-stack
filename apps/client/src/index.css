@@ -46,6 +46,10 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-error: var(--error);
 }
 
 :root[data-theme='default'][data-color-scheme='light'] {
@@ -81,6 +85,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --success: oklch(0.65 0.18 145);
+  --warning: oklch(0.82 0.17 85);
+  --info: oklch(0.63 0.19 255);
+  --error: oklch(0.63 0.24 28);
 }
 
 :root[data-theme='default'][data-color-scheme='dark'] {
@@ -115,6 +123,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --success: oklch(0.74 0.17 145);
+  --warning: oklch(0.87 0.16 85);
+  --info: oklch(0.73 0.17 255);
+  --error: oklch(0.71 0.2 28);
 }
 
 :root[data-theme='claude'][data-color-scheme='light'] {
@@ -175,6 +187,10 @@
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+  --success: oklch(0.65 0.18 145);
+  --warning: oklch(0.82 0.17 85);
+  --info: oklch(0.63 0.19 255);
+  --error: oklch(0.63 0.24 28);
 }
 
 :root[data-theme='claude'][data-color-scheme='dark'] {
@@ -233,6 +249,10 @@
   --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
   --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+  --success: oklch(0.74 0.17 145);
+  --warning: oklch(0.87 0.16 85);
+  --info: oklch(0.73 0.17 255);
+  --error: oklch(0.71 0.2 28);
 }
 
 @layer base {
