@@ -1,0 +1,29 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fsGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#F7931E"/>
+    </linearGradient>
+    <linearGradient id="fsGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="fsGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stacked layers, bottom to top, forming an abstract "stack" -->
+  <g>
+    <!-- Bottom layer -->
+    <path d="M 128 168 L 208 138 L 128 108 L 48 138 Z" fill="url(#fsGrad3)"/>
+    <!-- Middle layer -->
+    <path d="M 128 128 L 208 98 L 128 68 L 48 98 Z" fill="url(#fsGrad2)"/>
+    <!-- Top layer with forge spark cut-out feel -->
+    <path d="M 128 88 L 208 58 L 128 28 L 48 58 Z" fill="url(#fsGrad1)"/>
+  </g>
+
+  <!-- Spark accent -->
+  <path d="M 128 44 L 134 56 L 146 58 L 134 61 L 128 73 L 123 61 L 111 58 L 123 56 Z" fill="#FFFFFF" opacity="0.9"/>
+</svg>

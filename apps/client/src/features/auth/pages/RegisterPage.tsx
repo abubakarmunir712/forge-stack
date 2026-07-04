@@ -1,12 +1,13 @@
+import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 export default function RegisterPage() {
   return (
-    <div>
-      <h1 className="mb-2">Register Page</h1>
-      <Link to={'/login'} className="bg-white p-2 text-black">
-        Go to Home Page
-      </Link>
+    <div className="flex items-center gap-2 p-2">
+      <h1>Register Page</h1>
+      <Button asChild>
+        <Link to={'/'}>Go to Home Page</Link>
+      </Button>
     </div>
   );
 }
