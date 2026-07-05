@@ -8,9 +8,9 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { THEMES } from '@/config/theme';
-import { useTheme } from '@/hooks/use-theme';
+import { useTheme } from '@/hooks/theme';
 import type { Theme } from '@/types/theme';
-import { capitalize } from '@/lib/utils';
+import { capitalize } from '@/utils/string';
 
 export function ThemeSelector() {
   const { theme: currentTheme, setTheme: setCurrentTheme } = useTheme();

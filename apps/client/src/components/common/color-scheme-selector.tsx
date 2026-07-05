@@ -8,8 +8,8 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { COLOR_SCHEMES } from '@/config/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { capitalize } from '@/lib/utils';
+import { useTheme } from '@/hooks/theme';
+import { capitalize } from '@/utils/string';
 import type { ColorScheme } from '@/types/theme';
 
 export function ColorSchemeSelector() {
