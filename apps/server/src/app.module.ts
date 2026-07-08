@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { validate } from '@/schema/env.schema';
+import { validate } from '@/config/schema/env.schema';
 import { HealthModule } from './modules/health/health.module';
 import appConfig from '@/config/app.config';
 import { LoggerModule } from '@/common/logger/logger.module';
