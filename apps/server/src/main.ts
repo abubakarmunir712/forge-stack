@@ -3,10 +3,14 @@ import { AppModule } from '@/app.module';
 import { Logger } from 'nestjs-pino';
 import { type ConfigType } from '@nestjs/config';
 import appConfig from './config/app.config';
+import { RequestLoggingInterceptor } from './common/interceptors/request-logging.interceptor';
+import { LoggerService } from './common/logger/logger.service';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = app.get<ConfigType<typeof appConfig>>(appConfig.KEY);
+  const logger = app.get(LoggerService);
+  app.useGlobalInterceptors(new RequestLoggingInterceptor(logger));
 
   app.setGlobalPrefix('api', { exclude: ['health'] });
   app.useLogger(app.get(Logger));

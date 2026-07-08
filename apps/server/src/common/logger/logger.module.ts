@@ -12,6 +12,9 @@ import { LoggerService } from './logger.service';
       inject: [appConfig.KEY],
       useFactory: (appConf: ConfigType<typeof appConfig>) => ({
         pinoHttp: {
+          quietReqLogger: true,
+          quietResLogger: true,
+          autoLogging: false,
           transport:
             appConf.app.env === 'production'
               ? undefined
