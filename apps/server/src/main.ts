@@ -6,12 +6,14 @@ import appConfig from '@/config/app.config';
 import { RequestLoggingInterceptor } from '@/common/interceptors/request-logging.interceptor';
 import { LoggerService } from '@/common/logger/logger.service';
 import { ResponseInterceptor } from '@/common/interceptors/response.interceptor';
+import { HttpExceptionFilter } from '@/common/filters/http-exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = app.get<ConfigType<typeof appConfig>>(appConfig.KEY);
   const logger = app.get(LoggerService);
   app.useGlobalInterceptors(new RequestLoggingInterceptor(logger));
+  app.useGlobalFilters(new HttpExceptionFilter());
 
   const reflector = app.get(Reflector);
   app.useGlobalInterceptors(new ResponseInterceptor(reflector));
