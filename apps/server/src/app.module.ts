@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { validate } from '@/schema/env.schema';
 import { HealthModule } from './modules/health/health.module';
 import appConfig from '@/config/app.config';
+import { LoggerModule } from '@/common/logger/logger.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import appConfig from '@/config/app.config';
       validate,
     }),
     HealthModule,
+    LoggerModule,
   ],
   controllers: [],
   providers: [],
